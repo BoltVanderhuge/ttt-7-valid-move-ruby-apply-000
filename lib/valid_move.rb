@@ -1,22 +1,11 @@
-def valid_move?(board, position)
-
-move = position.to_i
-
-test = move-1
-
- 
-
-if position_taken?(board, test) == false && test.between?(0, 8)
-
-true
-
-else
-
-false
-
+def valid_move?(board, index)
+  if position_taken?(board, index)
+    false
+    elsif index.between?(0,8) 
+    true
+  end
 end
 
-end
 
  
 
